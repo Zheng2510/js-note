@@ -217,3 +217,4 @@ arr.splice(index,0,'x','y')
 2. 用reduce代替map
 
 * ![f](images/010.jpg)
+* ![tu](images/011.jpg)
