@@ -218,3 +218,50 @@ arr.splice(index,0,'x','y')
 
 * ![f](images/010.jpg)
 * ![tu](images/011.jpg)
+
+### 题
+1. 把数字变星期
+
+```
+let arr = [0,1,2,2,3,3,3,4,4,4,4,6]
+let arr2 = arr.map(补全代码)
+console.log(arr2) // ['周日', '周一', '周二', '周二', '周三', '周三', '周三', '周四', '周四', '周四', '
+
+```
+答案
+```
+let arr = [0,1,2,2,3,3,3,4,4,4,4,6]
+let arr2 = arr.map((i)=>{return {0:'周日',1:'周一',2:'周二',3:'周三',4:'周四',6:'周六'} [i]})
+console.log(arr2)
+```
+2. 找出所有大于60的成绩
+
+```
+let scores = [95,91,59,55,42,82,72,85,67,66,55,91]
+let scores2 = scores.filter(补全代码)
+console.log(scores2) //  [95,91,82,72,85,67,66, 91]
+```
+* 答案
+
+```
+let scores = [95,91,59,55,42,82,72,85,67,66,55,91]
+let scores2=scores.filter(item=>item>60 ===true)
+console.log(scores2)
+```
+3. 算出所有奇数之和
+
+```
+let scores = [95,91,59,55,42,82,72,85,67,66,55,91]
+let sum = scores.reduce((sum, n)=>{
+  补全代码
+},0)
+console.log(sum) // 奇数之和：598
+```
+* 答案
+
+```
+let scores = [95,91,59,55,42,82,72,85,67,66,55,91]
+let sum = scores.reduce((sum, n)=>{return n%2===0?sum:sum+n
+},0)
+console.log(sum)
+```
