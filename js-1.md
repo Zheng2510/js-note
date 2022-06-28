@@ -66,7 +66,7 @@
 ```
 var a = 1
 var b = a
-var person = {name:'frank'.child:{name:'jack'}}
+var person = {name:'frank',child:{name:'jack'}}
 var person2 = person
 ```
 * 规律
